@@ -6,8 +6,11 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
+set :stage, :production
+set :rails_env, :production
 set :deploy_to, "~/cap_learning"
-server "172.17.0.3", user: "deploy", roles: %w(web app db)
+set :branch, :master
+server "172.17.0.2", user: "deploy", roles: %w(web app db)
 
 # role-based syntax
 # ==================

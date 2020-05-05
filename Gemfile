@@ -14,6 +14,9 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "dotenv-rails"
 gem "capistrano"
 gem "capistrano3-puma"
+gem "capistrano-rails", require: false
+gem "capistrano-bundler", require: false
+gem "capistrano-rvm"
 
 group :development, :test do
   gem "pry-rails"
