@@ -17,7 +17,7 @@ environment "development"
 tag ""
 
 pidfile "#{project_path}/shared/tmp/pids/puma.pid"
-state_path "/home/le.quang.canh/LMS-API/shared/tmp/pids/puma.state"
+state_path "#{project_path}/shared/tmp/pids/puma.state"
 stdout_redirect "#{project_path}/shared/log/puma_access.log", "#{project_path}/shared/log/puma_error.log", true
 
 threads 0,8
