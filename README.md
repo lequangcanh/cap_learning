@@ -1,5 +1,7 @@
 # Some notes
 
+* For run this project, please use this master_key: `152622406a16454360be55bb5ff7d367`
+
 ## Về puma.rb
 
 * Sử dụng `gem "capistrano3-puma"`
